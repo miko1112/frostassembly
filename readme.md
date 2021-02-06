@@ -24,4 +24,7 @@ Check out the documentation at https://miko1112.github.io/fasm/docs.
 
 ### Running Code
 
-Run code by dragging your *.frost file on the fasmrun.py file.
+Run code by dragging your *.frost file on the fasmrun.py file, or by saving your code in the same directory as the runfasm.py file and run in terminal:
+```
+runfasm.py yourcode.frost
+```
