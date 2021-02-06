@@ -21,3 +21,7 @@ So, I decided that I would try to write an interpreter for Forth in Python. It w
 ### Docs
 
 Check out the documentation at https://miko1112.github.io/fasm/docs .
+
+### Running Code
+
+Run code by dragging your *.frost file on the runfasm.py file.
