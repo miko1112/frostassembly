@@ -1,5 +1,7 @@
 # FAsm: Tiny power
 
+*NOTE: Check out ReadMeToo.md for some info on updates to the language.*
+
 ### About
 
 FrostAssembly, or FAsm, is a small, stack based programming language that uses reverse polish notation. I made it in my spare time.
