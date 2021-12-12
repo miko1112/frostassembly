@@ -4,11 +4,11 @@
 
 ### About
 
-FrostAssembly, or FAsm, is a small, stack based programming language that uses reverse polish notation. I made it in my spare time.
+FrostAssembly, or FAsm, is a small, stack based programming language. I made it in my spare time.
 
-### Backstory
+### Origin
 
-At some point in time, I was looking for a text to speech program that sounded like those from the eighties. I found this website that emulated the SAM TTS engine, and I found it pretty cool, so I explored more of the creator's website. I then found that this person was working on a reverse engineered version of StarFlight, a game from 1986. I looked into the GitHub repository, and fell into the ReadMe.md file. That's when I got introduced to forth. The example they gave was the following:
+At some point in time, I was looking for a text to speech program that sounded like those from the eighties. I found this website that emulated the SAM TTS engine, and I found it pretty cool, so I explored more of the creator(s-macke)'s website. I then found that this person was working on a reverse engineered version of StarFlight, a game from 1986. I looked into the GitHub repository, and fell into the ReadMe.md file. That's when I got introduced to Forth. The example they gave was the following:
 ```
 2 3 + .
 ```
@@ -18,7 +18,7 @@ I was amazed by the simplicity of it, especially how what is happening internall
  - pop the last two stack entries and add them together. push result back on top of the stack
  - pop the top value from the stack and print it
 
-So, I decided that I would try to write an interpreter for Forth in Python. It was going smoothly until I tried to implement if statements. They defied the simplicity(at least in my head) and didn't use one char commands, which was one of the things I was most excited about. So I decided to take my own path and branch off into my own language. And here we are, with the first finished version of FAsm!
+So, I decided that I would try to write an interpreter for Forth in Python. It was going smoothly until I tried to implement if statements. They defied the simplicity(at least in *my* mind) and didn't use one char commands, which was one of the things I was most excited about. So I decided to take my own path and branch off into my own language. And here we are, with the first finished version of FAsm!
 
 ### Docs
 
