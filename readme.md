@@ -1,4 +1,4 @@
-# FAsm: Tiny power
+# FAsm
 
 *NOTE: Check out ReadMeToo.md for some info on updates to the language.*
 
