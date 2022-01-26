@@ -92,24 +92,24 @@ def runfasm(source,indevice=input,outdevice=print,plugin=None):
     nonlocal index,rstack
     index=rstack.pop()
   bindings={
-    "+":"add",
-    "*":"mul",
-    "-":"sub",
-    "/":"div",
-    ".":"nPrint",
-    ",":"aPrint",
-    ";":"aInput",
-    "=":"popEq",
-    ">":"popMr",
-    "<":"popLs",
-    "?":"ifDo",
-    "!":"notDo",
-    "a":"aPush",
-    "p":"aPull",
-    "s":"sToggle",
-    "l":"useAccumulator",
-    "x":"t.pop",
-    "r":'sReturn'
+    "+":add,
+    "*":mul,
+    "-":sub,
+    "/":div,
+    ".":nPrint,
+    ",":aPrint,
+    ";":aInput,
+    "=":popEq,
+    ">":popMr,
+    "<":popLs,
+    "?":ifDo,
+    "!":notDo,
+    "a":aPush,
+    "p":aPull,
+    "s":sToggle,
+    "l":useAccumulator,
+    "x":t.pop,
+    "r":sReturn
   }
   c=source.replace("\n"," ").replace("\r"," ").replace('	',' ').split(' ')
   while index!=len(c):
@@ -157,7 +157,7 @@ def runfasm(source,indevice=input,outdevice=print,plugin=None):
         continue
       if work in bindings.keys():
           try:
-            eval(bindings[work]+'()')
+            bindings[work]()
             continue
           except: pass
       if work.startswith('o:'):
